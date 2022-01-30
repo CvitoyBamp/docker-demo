@@ -3,7 +3,6 @@ WORKDIR /opt/app
 ADD . .
 RUN apt-get update
 RUN apt-get upgrade
-RUN curl -sL https://deb.nodesource.com/setup | bash -
 RUN apt-get install build-essential libssl-dev
 RUN apt-get install nodejs -y
 RUN apt-get install npm -y
